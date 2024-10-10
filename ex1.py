@@ -2,6 +2,7 @@
 from pathlib import Path
 path = Path('HW_4.txt')
 path.write_text('Alex Korp,3000\nNikita Borisenko,2000\nSitarama Raju,1000')
+
 def total_salary(path):
     salary = []
     sum_salary = 0
@@ -26,7 +27,7 @@ def total_salary(path):
             all_reults = (sum_salary, int(avarege_salary))
             return all_reults
     else:
-        print(f'На жаль, файл {path} не був знайдений')
+        print(f'Нажаль, файл {path} не був знайдений')
 
 total, average = total_salary('HW_4.txt')
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
