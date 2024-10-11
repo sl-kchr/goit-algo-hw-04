@@ -16,7 +16,7 @@ def get_cats_info(path):
                     i = i.split(',')
                     cats_info.update({"id":(i[1]), "name":(i[1]), "age": (i[2])})
                     cats_data.append(cats_info)
-                print( cats_data)
+                return cats_data
             else:
                 print('Файл порожній')
         else:
