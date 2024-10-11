@@ -27,7 +27,7 @@ def total_salary(path):
             all_reults = (sum_salary, int(avarege_salary))
             return all_reults
     else:
-        print(f'Нажаль, файл {path} не був знайдений')
+        print(f'На жаль, файл {path} не був знайдений')
 
 total, average = total_salary('HW_4.txt')
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
