@@ -22,9 +22,9 @@ def total_salary(path):
                 if len(i) > 1:
                     salary.append(i[1])
             for k in salary:
-                sum_salary += int(k)
+                sum_salary += float(k)
             avarege_salary = sum_salary/num_of_w
-            all_reults = (sum_salary, int(avarege_salary))
+            all_reults = (sum_salary, float(avarege_salary))
             return all_reults
     else:
         print(f'На жаль, файл {path} не був знайдений')
